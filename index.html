@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -9,14 +10,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
 :root {
-  --bg: #f8f6f1;
+  --bg: #eef4f8;
   --text: #1f1f1f;
-  --muted: #6f6f6f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,13 +34,13 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-/* Layout container */
 .container {
   width: min(1000px, 90%);
   margin: 0 auto;
 }
 
-/* NAVIGATION */
+/* Navigation */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -42,9 +50,9 @@ nav {
 
 .logo {
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.2em;
-  font-weight: 300;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
@@ -60,39 +68,49 @@ nav {
   font-size: 0.95rem;
 }
 
+.menu a:hover {
+  opacity: 0.7;
+}
+
+/* Leerer Platz für spätere Inhalte */
+
+.spacer {
+  min-height: 75vh;
+}
+
 /* Kontakt */
+
 section {
   padding: 120px 0;
 }
 
 h2 {
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.2em;
-  font-weight: 300;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 32px;
 }
 
-/* Social links */
 .socials {
   display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
+  gap: 28px;
+  align-items: center;
+  font-size: 1.8rem;
 }
 
 .socials a {
   text-decoration: none;
   color: var(--text);
-  border-bottom: 1px solid transparent;
-  padding-bottom: 2px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
 
 .socials a:hover {
-  border-bottom: 1px solid var(--text);
+  opacity: 1;
 }
 
 /* Mobile */
+
 @media (max-width: 700px) {
 
   nav {
@@ -105,9 +123,10 @@ h2 {
     gap: 16px;
   }
 
-  .socials {
-    gap: 20px;
+  .spacer {
+    min-height: 60vh;
   }
+
 }
 
 </style>
@@ -117,34 +136,41 @@ h2 {
 
 <div class="container">
 
-<!-- NAV -->
 <nav>
-  <div class="logo">ELLY FLESCHUTZ</div>
+
+  <div class="logo">
+    ELLY FLESCHUTZ
+  </div>
 
   <div class="menu">
-    <a href="#arbeiten">Arbeiten</a>
-    <a href="#projekte">Projekte</a>
-    <a href="#ueber">Über</a>
-    <a href="#kontakt">Kontakt</a>
+
+    <a href="https://www.torial.com/elisabeth.fleschutz" target="_blank">
+      Artikel lesen
+    </a>
+
+    <a href="#kontakt">
+      Kontakt
+    </a>
+
   </div>
+
 </nav>
 
-<!-- PLACEHOLDER CONTENT (kannst du später füllen) -->
-<main>
-
+<main class="spacer">
 </main>
 
-<!-- FOOTER / KONTAKT -->
 <section id="kontakt">
 
   <h2>Kontakt</h2>
 
   <div class="socials">
 
-    <a href="mailto:ellyfleschutz@web.de">E-Mail</a>
+    <a href="mailto:DEINE-MAIL@BEISPIEL.DE" title="E-Mail">
+      ✉
+    </a>
 
-    <a href="https://instagram.com/ellyfleschutz" target="_blank">
-      Instagram
+    <a href="https://instagram.com/DEINUSERNAME" target="_blank" title="Instagram">
+      ◉
     </a>
 
   </div>
@@ -155,3 +181,4 @@ h2 {
 
 </body>
 </html>
+```
