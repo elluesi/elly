@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -10,123 +9,79 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
-:root {
-  --bg: #eef4f8;
-  --text: #1f1f1f;
+:root{
+  --bg:#eef4f8;
+  --text:#202020;
 }
 
-* {
-  box-sizing: border-box;
+*{
+  box-sizing:border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
 }
 
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Inter', sans-serif;
+.container{
+  width:min(900px,90%);
+  margin:0 auto;
 }
 
-.container {
-  width: min(1000px, 90%);
-  margin: 0 auto;
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:32px 0;
 }
 
-/* Navigation */
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 32px 0;
+.logo{
+  font-size:.9rem;
+  letter-spacing:.15em;
+  text-transform:uppercase;
 }
 
-.logo {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+.menu a{
+  text-decoration:none;
+  color:var(--text);
+  font-size:.95rem;
 }
 
-.menu {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
+.menu a:hover{
+  opacity:.7;
 }
 
-.menu a {
-  text-decoration: none;
-  color: var(--text);
-  font-size: 0.95rem;
+.contact{
+  margin-top:20px;
 }
 
-.menu a:hover {
-  opacity: 0.7;
+.contact h2{
+  font-size:1rem;
+  font-weight:500;
+  margin-bottom:18px;
 }
 
-/* Leerer Platz für spätere Inhalte */
-
-.spacer {
-  min-height: 75vh;
+.icons{
+  display:flex;
+  gap:16px;
+  align-items:center;
 }
 
-/* Kontakt */
-
-section {
-  padding: 120px 0;
+.icons img{
+  width:32px;
+  height:32px;
+  image-rendering:auto;
+  transition:transform .15s ease;
 }
 
-h2 {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 32px;
-}
-
-.socials {
-  display: flex;
-  gap: 28px;
-  align-items: center;
-  font-size: 1.8rem;
-}
-
-.socials a {
-  text-decoration: none;
-  color: var(--text);
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
-}
-
-.socials a:hover {
-  opacity: 1;
-}
-
-/* Mobile */
-
-@media (max-width: 700px) {
-
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .menu {
-    gap: 16px;
-  }
-
-  .spacer {
-    min-height: 60vh;
-  }
-
+.icons img:hover{
+  transform:translateY(-2px);
 }
 
 </style>
@@ -143,34 +98,25 @@ h2 {
   </div>
 
   <div class="menu">
-
     <a href="https://www.torial.com/elisabeth.fleschutz" target="_blank">
       Artikel lesen
     </a>
-
-    <a href="#kontakt">
-      Kontakt
-    </a>
-
   </div>
 
 </nav>
 
-<main class="spacer">
-</main>
-
-<section id="kontakt">
+<section class="contact">
 
   <h2>Kontakt</h2>
 
-  <div class="socials">
+  <div class="icons">
 
-    <a href="mailto:DEINE-MAIL@BEISPIEL.DE" title="E-Mail">
-      ✉
+    <a href="mailto:ellyfleschutz@web.de">
+      <img src="mail.png" alt="E-Mail">
     </a>
 
-    <a href="https://instagram.com/DEINUSERNAME" target="_blank" title="Instagram">
-      ◉
+    <a href="https://instagram.com/ellyfleschutz" target="_blank">
+      <img src="insta.png" alt="Instagram">
     </a>
 
   </div>
@@ -181,4 +127,3 @@ h2 {
 
 </body>
 </html>
-```
